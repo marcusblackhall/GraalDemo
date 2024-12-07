@@ -1,0 +1,19 @@
+## Project for demo of graalvm
+
+### Build a native executable
+
+[source,bash]
+----
+mvn package  -Pnative -DskipTests -Dagent
+----
+
+### Run the native image
+
+Once the native image is build, move to the the target directory and run the native image.
+
+[source,bash]
+----
+cd target
+./graaldemo MeanMessage
+----
+
