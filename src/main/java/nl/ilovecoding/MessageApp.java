@@ -5,10 +5,6 @@ package nl.ilovecoding;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/**
- *  Class <b>App</b> - main class
- *  @author     Java I
- */
 
 public class MessageApp {
 
