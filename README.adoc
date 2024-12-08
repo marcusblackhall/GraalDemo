@@ -1,5 +1,18 @@
 ## Project for demo of graalvm
 
+### Description
+This project defines an application link:src/main/java/nl/ilovecoding/MessageApp.java[MessageApp] that uses java reflection to invoke a method on a class.
+The maven native image plugin is used for building a native image using the profile with the name *_native_* .
+
+#### Install graalvm
+To use this project a local graalvm java21 jdk shpuld be used. This can be installed with sdkman
+
+[source,bash]
+----
+sdk install java 21-graalce
+----
+
+
 ### Build a native executable
 
 [source,bash]
@@ -16,4 +29,9 @@ Once the native image is build, move to the the target directory and run the nat
 cd target
 ./graaldemo MeanMessage
 ----
+
+### Reachability meta data
+
+All reachability meta data json files should be placed in the directory META-INF/native-image/groupId/artifactId on the classpath.
+The project has file link:src/main/resources/META-INF/native-image/nl.ilovecoding/graaldemo/reflect-config.json[reflect-config] that defines the classes which are called using reflectionwhere reflection.
 
