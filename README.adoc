@@ -33,5 +33,5 @@ cd target
 == Reachability meta data
 
 All reachability meta data json files should be placed in the directory META-INF/native-image/groupId/artifactId on the classpath.
-The project has file link:src/main/resources/META-INF/native-image/nl.ilovecoding/graaldemo/reflect-config.json[reflect-config] that defines the classes which are called using reflectionwhere reflection.
+The project has file link:src/main/resources/META-INF/native-image/nl.ilovecoding/graaldemo/reflect-config.json[reflect-config] that defines the classes which are called using reflection.
 
